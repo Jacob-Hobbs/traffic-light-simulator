@@ -1,5 +1,6 @@
 package traffic;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -23,7 +24,8 @@ public class Menu {
 
         while(true) {
 
-            //FIXME : Need to add way to clear terminal
+            // FIXME : clear terminal not resolving test failure.
+            clearTerminal();
 
             printMainMenu();
             String input = scanner.next();
@@ -38,6 +40,7 @@ public class Menu {
         }
     }
 
+    // Outputs main menu of program
     public void printMainMenu() {
         System.out.println("Menu: ");
         System.out.println("1. Add road");
@@ -46,6 +49,7 @@ public class Menu {
         System.out.println("0. Quit");
     }
 
+    // Validates input is a valid, positive integer
     public void validateForPositiveInt() {
         while (true) {
             if (scanner.hasNextInt()) {
@@ -64,5 +68,16 @@ public class Menu {
                 System.out.print("Error! Incorrect Input. Try again: ");
             }
         }
+    }
+
+    // Clears current contents within terminal
+    public void clearTerminal() {
+        try {
+            var clearCommand = System.getProperty("os.name").contains("Windows")
+                    ? new ProcessBuilder("cmd", "/c", "cls")
+                    : new ProcessBuilder("clear");
+            clearCommand.inheritIO().start().waitFor();
+        }
+        catch (IOException | InterruptedException e) {}
     }
 }

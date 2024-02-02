@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GlobalTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-02-02T00:43:05" hostname="DESKTOP-540C16A" time="0.105">
+<testsuite name="GlobalTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-02-02T14:57:09" hostname="DESKTOP-540C16A" time="0.2">
   <properties/>
-  <testcase name="start" classname="GlobalTests" time="0.105">
+  <testcase name="start" classname="GlobalTests" time="0.2">
     <failure message="java.lang.AssertionError: Wrong answer in test #2&#10;&#10;For &quot;1&quot; option on current stage there should be a simple one-line stub, containing &quot;add&quot; substring, followed by input to return back to menu&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;Welcome to the traffic management system!&#10;Input the number of roads: &gt; 5&#10;Input the interval: &gt; 3&#10;Menu: &#10;1. Add road&#10;2. Delete road&#10;3. Open System&#10;0. Quit&#10;&gt; 1&#10;Road added&#10;Menu: &#10;1. Add road&#10;2. Delete road&#10;3. Open System&#10;0. Quit" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #2
 
 For &quot;1&quot; option on current stage there should be a simple one-line stub, containing &quot;add&quot; substring, followed by input to return back to menu
