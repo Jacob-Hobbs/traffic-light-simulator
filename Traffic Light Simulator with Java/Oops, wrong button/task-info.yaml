@@ -856,5 +856,15 @@ files:
       }
     learner_created: true
 feedback_link: https://hyperskill.org/projects/288/stages/1502/implement#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: "Wrong answer in test #2\n\nFor &quot;1&quot; option on current stage there\
+    \ should be a simple one-line stub, containing &quot;add&quot; substring, followed\
+    \ by input to return back to menu\n\nPlease find below the output of your program\
+    \ during this failed test.\nNote that the &#39;&gt;&#39; character indicates the\
+    \ beginning of the input line.\n\n---\n\nWelcome to the traffic management system!\n\
+    Input the number of roads: &gt; 5\nInput the interval: &gt; 3\nMenu: \n1. Add\
+    \ road\n2. Delete road\n3. Open System\n0. Quit\n&gt; 1\nRoad added\nMenu: \n\
+    1. Add road\n2. Delete road\n3. Open System\n0. Quit"
+  time: "Fri, 02 Feb 2024 00:43:06 UTC"
 record: -1

@@ -22,6 +22,9 @@ public class Menu {
         validateForPositiveInt();
 
         while(true) {
+
+            //FIXME : Need to add way to clear terminal
+
             printMainMenu();
             String input = scanner.next();
 
