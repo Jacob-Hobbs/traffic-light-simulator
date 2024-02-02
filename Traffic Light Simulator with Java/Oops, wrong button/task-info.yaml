@@ -803,6 +803,58 @@ files:
         }
       }
     learner_created: false
+  - name: src/traffic/Menu.java
+    visible: true
+    text: |
+      package traffic;
+      
+      import java.util.Scanner;
+      
+      public class Menu {
+      
+          private Scanner scanner;
+      
+          public Menu () {
+              this.scanner = new Scanner(System.in);
+          }
+      
+          public void start() {
+      
+              System.out.println("Welcome to the traffic management system!");
+              System.out.print("Input the number of roads: ");
+              int numOfRoads = Integer.valueOf(scanner.next());
+              System.out.print("Input the interval: ");
+              int interval = Integer.valueOf(scanner.next());
+      
+              while(true) {
+                  printMainMenu();
+                  String input = scanner.next();
+      
+                  if (input.equals("1") ) {
+                      System.out.println("Road added");
+                  } else if (input.equals("2")) {
+                      System.out.println("Road deleted");
+                  } else if (input.equals("3")) {
+                      System.out.println("System opened");
+                  } else if (input.equals("0")) {
+                      System.out.println("Bye!");
+                      break;
+                  }
+      
+              }
+      
+          }
+      
+          public void printMainMenu() {
+      
+              System.out.println("Menu: ");
+              System.out.println("1. Add road");
+              System.out.println("2. Delete road");
+              System.out.println("3. Open System");
+              System.out.println("0. Quit");
+          }
+      }
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/288/stages/1502/implement#comment
 status: Unchecked
 record: -1
